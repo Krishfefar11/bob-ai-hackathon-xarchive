@@ -6,10 +6,10 @@
 
 | Field | Value |
 |---|---|
-| **Team Name** | TODO — fill in before final submission |
+| **Team Name** | Xarchive |
 | **Track** | AI |
-| **Team Lead** | TODO — drashtifefar7777@gmail.com |
-| **Members** | TODO |
+| **Team Lead** | Krish Fefar — fefarkrish26@gmail.com |
+| **Members** | Kuldeep Jethloja, Deep Marodia, Dhruv Kamariya |
 
 ---
 

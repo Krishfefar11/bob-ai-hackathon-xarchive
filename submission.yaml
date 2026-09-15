@@ -9,12 +9,18 @@
 # =============================================================================
 
 team:
-  name: ""                             # REQUIRED — TODO: fill in before final submission
+  name: "Xarchive"                     # REQUIRED
   track: "AI"                          # REQUIRED — one of: AI | DevOps | Sustainability | Open
   lead:
-    name: ""                           # REQUIRED — TODO: fill in before final submission
-    email: "drashtifefar7777@gmail.com" # REQUIRED
-  members: []                          # Add more as {name: "", email: ""} entries if this isn't solo
+    name: "Krish Fefar"                # REQUIRED
+    email: "fefarkrish26@gmail.com"    # REQUIRED
+  members:
+    - name: "Kuldeep Jethloja"
+      email: ""
+    - name: "Deep Marodia"
+      email: ""
+    - name: "Dhruv Kamariya"
+      email: ""
 
 submission:
   title: "Drug Safety Signal Detector & Regulatory Submission Readiness Checker"
