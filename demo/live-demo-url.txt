@@ -1,0 +1,4 @@
+NOT DEPLOYED — run locally using docs/setup-guide.md
+
+Hackathon-provisioned IBM Cloud accounts do not support deployment (see CLAUDE.md
+section 13), so this runs locally only: `streamlit run src/app/main.py`.

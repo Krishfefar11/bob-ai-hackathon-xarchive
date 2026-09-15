@@ -1,0 +1,37 @@
+"""Validates PRR/chi-squared against a hand-computed contingency table."""
+import pandas as pd
+
+from signal_detection.prr import calculate_prr
+
+
+def _synthetic_df():
+    rows = []
+    rows += [{"drug": "DRUGX", "reaction": "EVENTY"}] * 10
+    rows += [{"drug": "DRUGX", "reaction": "EVENTOTHER"}] * 90
+    rows += [{"drug": "DRUGZ", "reaction": "EVENTY"}] * 5
+    rows += [{"drug": "DRUGZ", "reaction": "EVENTOTHER"}] * 895
+    return pd.DataFrame(rows)
+
+
+def test_known_signal_flagged():
+    df = _synthetic_df()
+    result = calculate_prr(df, min_reports=3)
+
+    row = result[(result["drug"] == "DRUGX") & (result["reaction"] == "EVENTY")].iloc[0]
+    assert row["a"] == 10
+    assert row["prr"] > 2
+    assert row["chi2"] > 4
+    assert row["signal"]
+
+
+def test_below_threshold_not_flagged():
+    df = _synthetic_df()
+    result = calculate_prr(df, min_reports=3)
+
+    row = result[(result["drug"] == "DRUGZ") & (result["reaction"] == "EVENTY")].iloc[0]
+    assert not row["signal"]
+
+
+def test_empty_input_returns_empty_frame():
+    result = calculate_prr(pd.DataFrame(columns=["drug", "reaction"]))
+    assert result.empty
