@@ -97,10 +97,7 @@ Full details, including troubleshooting, in [`docs/setup-guide.md`](docs/setup-g
 
 | Artifact | Link |
 |---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) — TODO, not recorded yet |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) — TODO, not added yet |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) — TODO, not added yet |
+| 📹 Demo Video | https://drive.google.com/drive/folders/1WV7IxggWl61x-T_nOBi6EE7FDf-MdW2f |
 
 ---
 
